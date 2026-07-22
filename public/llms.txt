@@ -1,0 +1,7 @@
+# Swayam
+
+> Portfolio of Swayam Sankar Nayak — Digital Multimedia Designer based in Jajpur Town, Odisha, crafting branding, web design, UI/UX, motion, and creative development for ambitious teams.
+
+## Pages
+
+- [Home](/): Hero, services, showcase, showreel, technical work, gallery, testimonials, and contact for the Swayam portfolio.
