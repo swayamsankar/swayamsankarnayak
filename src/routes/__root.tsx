@@ -79,13 +79,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Swayam — Future Creative Digital Agency" },
+      {
+        name: "google-site-verification",
+        content: "gdjKfvjwfkKmZpUDmgMzFWOF2dKFp9hiQ2urKP0p2qg",
+      },
+      { title: "Swayam — portfolio website" },
       {
         name: "description",
         content:
           "Swayam is a Digital Multimedia Designer crafting immersive digital experiences that inspire, engage, and leave a lasting impression.",
       },
-      { property: "og:title", content: "Swayam — Future Creative Digital Agency" },
+      { property: "og:title", content: "Swayam — portfolio website" },
       {
         property: "og:description",
         content: "Branding, web design, development, UI/UX and motion for ambitious teams.",
