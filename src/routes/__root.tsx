@@ -11,6 +11,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import SplashCursor from "@/components/reactbits/SplashCursor";
 
 import appCss from "../styles.css?url";
+import { trackPageView } from "../analytics";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -167,7 +168,10 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setMounted(true);
+    trackPageView();
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
